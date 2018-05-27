@@ -1,0 +1,11 @@
+首先下载ncdu，这里下载的是ncdu的1.6版本：http://soft.vpser.net/manage/ncdu/ncdu-1.6.tar.gz
+#tar -xf ncdu-1.6.tar.gz //解压ncdu
+#cd ncdu-1.6 
+#./configure
+#make && make install //编译安装ncdu
+ncdu -x / //利用ncdu扫描根目录
+#ncdu –x /usr  //从结果可以看出/usr目录数据最大，对usr目录进行扫
+# ncdu -x /usr/share  //重复上一步，对/usr/share进行扫描
+# ncdu -x /usr/share/locale   //share目录下的文件大小一目了然，可以对share目录下最大的文件locale继续扫描
+通过上述步骤可以很清晰的看到根目录下文件的大小以及根目录下其他目录的文件信息。
+
